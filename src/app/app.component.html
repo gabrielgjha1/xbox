@@ -1,0 +1,82 @@
+<mat-sidenav-container fullscreen>
+
+  <mat-sidenav  #sidenav  mode="push">
+
+
+
+    <mat-toolbar  color="primary">
+      <span>Menú</span>
+      <button  (click)="sidenav.toggle()" mat-icon-button >
+        <mat-icon mat-list-icon>menu</mat-icon>
+      </button>
+
+
+
+    </mat-toolbar>
+
+    <mat-nav-list >
+      <a (click)="sidenav.toggle()" mat-list-item > <mat-icon mat-list-icon >login</mat-icon> <span>Inicio De Sesión</span> </a>
+      <a (click)="sidenav.toggle()" mat-list-item > <mat-icon mat-list-icon >play_arrow</mat-icon> <span>Inicio</span> </a>
+      <a (click)="sidenav.toggle()" mat-list-item > <mat-icon mat-list-icon >add</mat-icon> <span>Agregar Producto</span> </a>
+      <a (click)="sidenav.toggle()" mat-list-item > <mat-icon mat-list-icon>label</mat-icon> <span>Listar Productos</span> </a>
+      <a (click)="sidenav.toggle()" mat-list-item > <mat-icon mat-list-icon>category</mat-icon> <span>Crear Categoria</span> </a>
+      <a (click)="sidenav.toggle()" mat-list-item > <mat-icon mat-list-icon>exit</mat-icon> <span>Crear Categoria</span> </a>
+
+     </mat-nav-list>
+
+
+  </mat-sidenav>
+
+  <mat-toolbar  color="primary">
+
+    <button  (click)="sidenav.toggle()" mat-icon-button >
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <span  class="spacer" ></span>
+
+    <button mat-button >
+      Salir
+    </button>
+
+
+  </mat-toolbar>
+
+
+  <mat-toolbar  color="accent">
+
+    <div class="title-center">
+
+      <button mat-button >
+        Categoria 1
+      </button>
+
+      <button mat-button >
+        Categoria 2
+      </button>
+
+
+      <button mat-button >
+        Categoria 3
+      </button>
+
+
+      <button mat-button >
+        Categoria 4
+      </button>
+
+
+
+    </div>
+
+
+
+  </mat-toolbar>
+
+
+    <router-outlet></router-outlet>
+
+
+
+</mat-sidenav-container>
+
